@@ -16,3 +16,6 @@ def hotelbooking(request):
 
 def adopt(request):
     return render(request,'website/adopt.html')
+
+def login(request):
+    return render(request,'website/login.html')
