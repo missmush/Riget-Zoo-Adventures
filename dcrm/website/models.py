@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+from django.contrib.auth.models import AbstractUser
+
+class ZooUser(AbstractUser):
+    points = models.IntegerField(default=0)
+    address = models.CharField(max_length=200, blank=True)
+    phone = models.CharField(max_length=14, blank=True)

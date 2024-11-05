@@ -16,10 +16,15 @@
 {% include 'website/navbar.html' %}
 
 <body>
-<h1>boing</h1>
+<h1>get 50% off tickets by booking before our sale ends!</h1>
 <hr>
 <div class = "container">
     {% block content %}
+    <h1>Welcome to Riget Zoo Adventures</h1>
+    <h3>A great day out to feel closer to nature! Discover amazing wildlife, learn how we're protecting their future and share incredible memories of our leaping, roaring, squawking natural world.</h3>
+    <h3><a class="nav-link" href="{% url 'about' %}"> Learn more about us by clicking here &nbsp; <i class="fa fa-book" aria-hidden="true"></i></a></h3>
+    <hr>
+    <h1>Adopt an animal and support the wildlife</h1>
     {% endblock %}
 </div>
 </body>
