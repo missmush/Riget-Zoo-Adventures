@@ -1,28 +1,13 @@
 {% extends 'website/home.html' %}
 
-{% load crispy_forms_tags %}
-
 {% block content %}
-    <body>
-        <br>
-        <div class="container bg-dark p-5 form-layout">
-            <h3>Login to your account</h3>
 
-            <hr>
-            <br>
-            <form method="POST" autocomplete="off">
-                {% csrf_token %}
-                {{login_form|crispy}}
-                <br>
-                <button type="submit" class="btn btn-primary w-100 btn-block p-2"> Login </button>
-            </form>
+<h1>Login to Riget Zoo Membership</h1>
+<hr>
+<h2>Enter name</h2>
+<h2>Enter email / phone number</h2>
+<h2>Enter password</h2>
+<hr>
+<h2>Confirm</h2>
 
-            <br>
-            <div class="text-center">
-                <p>Don't have an account? </p> <a href="{% url 'register' %}"> Register </a>
-            </div>
-
-        </div>
-        <br>
-    </body>
 {% endblock %}
