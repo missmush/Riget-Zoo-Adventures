@@ -1,5 +1,7 @@
 {% extends 'website/home.html' %}
 
+{% load static %}
+
 {% block content %}
 
 <h1>This is the About Us Page</h1>
@@ -8,5 +10,6 @@
 <hr>
 <h3>Adress</h3>
 <h3>Opening dates</h3>
+<img src="{% static 'images/whitepikmin.jpg' %}">
 
 {% endblock %}
