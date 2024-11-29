@@ -4,11 +4,14 @@
 
 {% block content %}
 
+{% load static %}
+
 <body>
     <br>
     <div class="container bg-dark p-5 form-layout">
         <h3>Login to your account</h3>
-
+        <img src="{% static 'images/hyrax.jpg' %}">
+        <h3>Hi its me the LOGIN HYRAX, please enter your username and password!</h3>
         <hr>
         <br>
         <form method="POST" autocomplete="off">
@@ -20,7 +23,7 @@
 
         <br>
         <div class="text-center">
-            <p>Don't have an account? </p> <a href="{% url 'home' %}"> Register </a>
+            <p>Don't have an account? </p> <a href="{% url 'register' %}"> Register </a>
         </div>
 
     </div>
